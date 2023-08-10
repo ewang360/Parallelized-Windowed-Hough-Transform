@@ -1,0 +1,22 @@
+gpu:
+#SBATCH --job-name=hough_cuda
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cluster=gpu
+#SBATCH --gres=gpu:1
+#SBATCH --partition=v100
+#SBATCH --time=10:00:00
+#SBATCH --qos=long
+#SBATCH --output=hough_cuda_%j.txt
+#SBATCH --account=ageorge
+
+smp:
+#SBATCH --job-name=hough_cuda
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=24
+#SBATCH --cluster=smp
+#SBATCH --partition=smp
+#SBATCH --time=10:00:00
+#SBATCH --qos=long
+#SBATCH --output=hough_cuda_%j.txt
+#SBATCH --account=ageorge
