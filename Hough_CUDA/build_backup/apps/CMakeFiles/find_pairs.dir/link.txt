@@ -1,0 +1,1 @@
+/ihome/crc/install/gcc/8.2.0/bin/c++     CMakeFiles/find_pairs.dir/find_pairs.cpp.o CMakeFiles/find_pairs.dir/cmake_device_link.o  -o find_pairs ../libhough_lib.a /ihome/crc/install/gcc/8.2.0/lib64/libgomp.so -lpthread -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

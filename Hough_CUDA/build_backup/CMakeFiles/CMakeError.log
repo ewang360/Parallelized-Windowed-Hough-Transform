@@ -1,0 +1,51 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /ihome/ageorge/elw96/Hough_CUDA/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_673c0/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_673c0.dir/build.make CMakeFiles/cmTC_673c0.dir/build
+gmake[1]: Entering directory '/ihome/ageorge/elw96/Hough_CUDA/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_673c0.dir/CheckSymbolExists.cxx.o
+/ihome/crc/install/gcc/8.2.0/bin/c++    -std=c++14 -o CMakeFiles/cmTC_673c0.dir/CheckSymbolExists.cxx.o -c /ihome/ageorge/elw96/Hough_CUDA/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_673c0
+/ihome/crc/install/cmake/3.13.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_673c0.dir/link.txt --verbose=1
+/ihome/crc/install/gcc/8.2.0/bin/c++       CMakeFiles/cmTC_673c0.dir/CheckSymbolExists.cxx.o  -o cmTC_673c0 
+CMakeFiles/cmTC_673c0.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_673c0.dir/build.make:87: cmTC_673c0] Error 1
+gmake[1]: Leaving directory '/ihome/ageorge/elw96/Hough_CUDA/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:121: cmTC_673c0/fast] Error 2
+
+File /ihome/ageorge/elw96/Hough_CUDA/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /ihome/ageorge/elw96/Hough_CUDA/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b08fc/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b08fc.dir/build.make CMakeFiles/cmTC_b08fc.dir/build
+gmake[1]: Entering directory '/ihome/ageorge/elw96/Hough_CUDA/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b08fc.dir/CheckFunctionExists.cxx.o
+/ihome/crc/install/gcc/8.2.0/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -std=c++14 -o CMakeFiles/cmTC_b08fc.dir/CheckFunctionExists.cxx.o -c /ihome/ageorge/elw96/Hough_CUDA/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_b08fc
+/ihome/crc/install/cmake/3.13.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b08fc.dir/link.txt --verbose=1
+/ihome/crc/install/gcc/8.2.0/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_b08fc.dir/CheckFunctionExists.cxx.o  -o cmTC_b08fc -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_b08fc.dir/build.make:87: cmTC_b08fc] Error 1
+gmake[1]: Leaving directory '/ihome/ageorge/elw96/Hough_CUDA/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:121: cmTC_b08fc/fast] Error 2
+
+
