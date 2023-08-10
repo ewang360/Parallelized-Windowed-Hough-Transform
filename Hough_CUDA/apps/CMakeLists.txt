@@ -8,6 +8,10 @@ add_executable(main_hough_rectangle_cuda main_hough_rectangle_cuda.cu )
 set_property(TARGET main_hough_rectangle_cuda PROPERTY CUDA_SEPARABLE_COMPILATION ON)
 target_link_libraries(main_hough_rectangle_cuda PRIVATE cublas PUBLIC Eigen3::Eigen PUBLIC hough_lib PUBLIC cxxopts PRIVATE stb PUBLIC cereal)
 
+add_executable(main_hough_rectangle_cuda_windows main_hough_rectangle_cuda_windows.cu )
+set_property(TARGET main_hough_rectangle_cuda_windows PROPERTY CUDA_SEPARABLE_COMPILATION ON)
+target_link_libraries(main_hough_rectangle_cuda_windows PRIVATE cublas PUBLIC Eigen3::Eigen PUBLIC hough_lib PUBLIC cxxopts PRIVATE stb PUBLIC cereal)
+
 # add_executable(main_fast_rectangle_detect main_fast_rectangle_detect.cpp )
 # target_link_libraries(main_fast_rectangle_detect PUBLIC Eigen3::Eigen PUBLIC hough_lib PUBLIC cxxopts PRIVATE stb PUBLIC cereal)
 
