@@ -1,1 +1,0 @@
-/ihome/crc/install/cuda/11.6.1/bin/nvcc   -Xcompiler=-fPIC -Wno-deprecated-gpu-targets -shared -dlink CMakeFiles/main_hough_rectangle_cuda.dir/main_hough_rectangle_cuda.cu.o -o CMakeFiles/main_hough_rectangle_cuda.dir/cmake_device_link.o -lcublas ../libhough_lib.a  -lpthread -lcudadevrt -lcudart_static -lrt -ldl  -L"/ihome/crc/install/cuda/11.6.1/lib64"

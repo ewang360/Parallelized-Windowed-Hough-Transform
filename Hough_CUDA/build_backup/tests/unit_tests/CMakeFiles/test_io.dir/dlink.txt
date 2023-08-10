@@ -1,1 +1,0 @@
-/ihome/crc/install/cuda/11.6.1/bin/nvcc   -Xcompiler=-fPIC -Wno-deprecated-gpu-targets -shared -dlink CMakeFiles/test_io.dir/test_io.cpp.o -o CMakeFiles/test_io.dir/cmake_device_link.o ../../libhough_lib.a  -lpthread -lcudadevrt -lcudart_static -lrt -ldl  -L"/ihome/crc/install/cuda/11.6.1/lib64"

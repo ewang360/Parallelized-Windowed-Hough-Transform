@@ -1,1 +1,0 @@
-/ihome/crc/install/gcc/8.2.0/bin/c++     CMakeFiles/main_hough_rectangle_cuda.dir/main_hough_rectangle_cuda.cu.o CMakeFiles/main_hough_rectangle_cuda.dir/cmake_device_link.o  -o main_hough_rectangle_cuda -lcublas ../libhough_lib.a /ihome/crc/install/gcc/8.2.0/lib64/libgomp.so -lpthread -lcudadevrt -lcudart_static -lrt -lpthread -ldl 
