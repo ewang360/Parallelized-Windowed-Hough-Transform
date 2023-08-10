@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 3.9)
+
+set(CMAKE_CUDA_COMPILER /usr/local/cuda/bin/nvcc)
+
 project(hough_rectangle LANGUAGES CXX CUDA)
 
 #set(CMAKE_CXX_STANDARD 17)  # works with 17, but not 20
